@@ -1,0 +1,30 @@
+<div class="col-xs-12 col-md-6">
+    <div class="panel panel-default" >
+        <div class="panel-body" [routerLink]="[message.messageId]">
+            <div class="row" >
+                <div class="col-xs-4">
+                    <div class="thumbnail">	
+                        <img [src]= message.image>
+                    </div>
+                </div>
+                <div class="col-xs-8">
+                    <h4 class="largerText">
+                        {{ message.author }}
+                        <h5 class="pull-right"> 
+                            {{ message.created }}  
+                        </h5>
+                    </h4>
+                    <h5 class="largerText">
+                        {{ message.content.substring(0,50) }}
+                        <span *ngIf="message.content.length > 50">...</span>
+                    </h5>
+                    <!--<a  class="ui blue basic button"
+                        style="font-size: 1.1em;"
+                        [routerLink]="[message.messageId]">
+                            More <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                    </a>-->
+                </div>	
+            </div>
+        </div>
+    </div>
+</div>

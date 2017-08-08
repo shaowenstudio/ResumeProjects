@@ -1,0 +1,5 @@
+nowjiandandian.com
+shaowenstudio.com
+
+1.shaowenstudio.com 建立服务器
+2.安装nodejs, nowjiandandian.com 改装

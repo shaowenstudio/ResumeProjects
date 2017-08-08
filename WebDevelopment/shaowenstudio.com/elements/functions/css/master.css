@@ -1,0 +1,63 @@
+body {
+	padding-top: 70px;
+	background: #edf3ff;
+}
+.container {
+	text-align: center;
+}
+
+/* .navbar.navbar-default { */
+	/* background: rgb(41, 71, 119); */
+	/* color: white; */
+/* } */
+.jumbotron {
+	text-align: left;
+	color: #2c3e50;
+	background: #ecf0f1;
+}
+
+.navbar-inverse {
+	background: #2c3e50;
+}
+
+.navbar-inverse .navbar-brand {
+    color: rgb(234, 242, 255);
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: rgb(234, 242, 255);
+}
+
+.prof-box {
+	width: 50%;
+	/* height: 280px; */
+	background: #ecf0f1;
+	padding: 25px;
+	color: #2c3e50;
+	/* margin: 0 auto; */
+	margin: 1.66%;
+	text-align: center;
+	/* float: left; */
+}
+
+.prof-pic{
+	border-radius: 50%;
+	height: 100%;
+	width: 100%;
+}
+
+.line-break {
+	border-top: 1px solid white;
+	text-align: left;
+}
+
+.social-icons {
+	width: 30%;
+	font-size: 30px;
+	color: black;
+}
+
+.panel {
+	padding-left: 3%;
+	text-align: left;
+}

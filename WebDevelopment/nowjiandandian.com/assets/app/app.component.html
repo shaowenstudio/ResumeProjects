@@ -1,0 +1,23 @@
+<ul class="nav nav-tabs">
+    <a [routerLink]="['/messages']" class="navbar-brand"   style="color: black">
+        <i class="fa fa-superpowers" aria-hidden="true"></i> EveryFirstTime
+    </a>
+    <li role="presentation" routerLinkActive="active" style="font-size: 1.1em;">
+        <a [routerLink]="['/messages']">All Messages</a>
+    </li>
+    <li role="presentation" routerLinkActive="active" style="font-size: 1.1em;">
+        <a [routerLink]="['/auth']">Transaction</a>
+    </li>
+    <!--<li role="presentation" routerLinkActive="active" style="font-size: 1.1em;">
+        <a [routerLink]="['/messages/:id']">Detail</a>
+    </li>-->
+</ul>
+
+<div class="row">
+    <div class="col-xs-12 col-md-10 col-md-offset-1">
+        <!--<app-header></app-header>-->
+        <br>
+        <router-outlet></router-outlet>
+    </div>
+</div>
+
