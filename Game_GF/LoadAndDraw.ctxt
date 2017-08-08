@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=LoadAndDraw
+comment1.params=
+comment1.target=int\ getID()
+comment2.params=
+comment2.target=int\ getScore()
+comment3.params=myImage\ number\ x\ y
+comment3.target=void\ drawID(greenfoot.GreenfootImage,\ int,\ int,\ int)
+comment4.params=
+comment4.target=void\ loadGame()
+comment5.params=rencentLevel
+comment5.target=void\ readDetailsFromFile(int)
+numComments=6

@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Level2
+comment1.params=
+comment1.target=Level2()
+comment2.params=arrowX\ arrowY\ rocketX\ rockteX\ score
+comment2.target=Level2(int,\ int,\ int,\ int,\ int)
+comment3.params=
+comment3.target=void\ prepare()
+comment4.params=
+comment4.target=void\ nonDefaultPrepare()
+numComments=5

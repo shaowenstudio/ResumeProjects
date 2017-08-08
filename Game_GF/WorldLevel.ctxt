@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=WorldLevel
+comment1.params=
+comment1.target=WorldLevel()
+comment10.params=rocketY
+comment10.target=void\ setRocketY(int)
+comment11.params=
+comment11.target=void\ prepare()
+comment2.params=arrowX\ arrowY\ rocketX\ rocketY\ currentScore
+comment2.target=WorldLevel(int,\ int,\ int,\ int,\ int)
+comment3.params=
+comment3.target=int\ getArrowX()
+comment4.params=arrowX
+comment4.target=void\ setArrowX(int)
+comment5.params=
+comment5.target=int\ getArrowY()
+comment6.params=arrowY
+comment6.target=void\ setArrowY(int)
+comment7.params=
+comment7.target=int\ getRocketX()
+comment8.params=rocketX
+comment8.target=void\ setRocketX(int)
+comment9.params=
+comment9.target=int\ getRocketY()
+numComments=12
