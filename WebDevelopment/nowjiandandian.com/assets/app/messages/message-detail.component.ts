@@ -17,7 +17,7 @@ export class MessageDetailComponent implements OnInit{
     constructor(private messageService: MessageService) {}
 
     onSubmit(form: NgForm) {      // Create
-        this.comments.push(new Comment(
+        this.comments.push(new Comment(  // temporary storage, display on web
                                 form.value.inputComment, 
                                 (new Date()).toLocaleString(),
                                 this.message.messageId ));
@@ -43,6 +43,7 @@ export class MessageDetailComponent implements OnInit{
                 .subscribe(
                     result => console.log(result)
                 );
+            alert('Message deleted. Wait few seconds to processing.');
         } else {
             alert('Invalid comformation code');
             console.log('Invalid comformation code');

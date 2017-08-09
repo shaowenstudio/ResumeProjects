@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit} from "@angular/core";
 
 import { Message } from "./message.model";
 import { MessageService } from "./message.service";
@@ -8,11 +8,11 @@ import { MessageService } from "./message.service";
     template: `
         <app-message
             [message]="message"
-            *ngFor="let message of messages.reverse()">
+            *ngFor="let message of messages">
         </app-message>
     `
-    // .reverse()
 })
+
 export class MessageListComponent implements OnInit {
     messages: Message[];
 
@@ -22,7 +22,7 @@ export class MessageListComponent implements OnInit {
         this.messageService.getMessages()
             .subscribe(
                 (messages: Message[]) => {
-                    this.messages = messages;
+                    this.messages = messages.reverse();
                 }
             );
     }

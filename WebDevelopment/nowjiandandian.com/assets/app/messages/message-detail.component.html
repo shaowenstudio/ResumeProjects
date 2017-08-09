@@ -1,25 +1,27 @@
-<a  class="ui inverted black button"
+<!--<a  class="ui inverted black button"
     [routerLink]="['/messages']">
     <i class="fa fa-chevron-left" aria-hidden="true" style='color: grey'></i>
-</a>
-<a  class="ui inverted black button" href="http://shaowenstudio.com:3000/messages">
+</a>-->
+<!--<a  class="ui inverted black button" href="http://localhost:3000/messages">
     <i class="fa fa-refresh" aria-hidden="true" style='color: grey'></i>
-</a>
-<hr>
+</a>-->
+<!--<hr>-->
 
 <div class=" col-xs-12 col-md-10 col-md-offset-1"> 
     <div class="thumbnail">
         <img [src]= message.image>
         <div class="caption-full">
             <h4 class="pull-right"> {{ message.created }} </h4>
-            <h3 >{{ message.author }}</h3>
-            <h4 > <span style="padding-left: 3%"></span>{{ message.content }} </h4>
+            <p class="self-content-lg"><strong>{{ message.author }}</strong></p>
+            <p class="self-content-lg">
+                <span style="padding-left: 3%"></span> {{ message.content }}
+            </p>
             <br>
         </div>
     </div>
     <div class="well" style="background: #fcfffe">
         <form (ngSubmit)="onSubmit(f)" #f="ngForm">
-            <div class="pull-left" style="width: 500px">
+            <div class="pull-left" style="width: 30%">
                 <input
                         type="text"
                         class="form-control"
@@ -27,21 +29,21 @@
                         name="inputComment"
                         required>
             </div>
-            <div class="pull-right">
+            <div>
                 <button 
+                        style="margin-left: 5px"
                         class="ui green basic button" 
                         type="submit"
                         [disabled]="f.value.inputComment == null">
-                    Add New Comment
+                        <i class="fa fa-check" aria-hidden="true"></i>
                 </button>
             </div>
         </form>
 
-        <br> <br>
         <hr>
         <div class="row" *ngFor="let comment of comments.reverse()">
             <div class="col-md-12">
-                <p class="pull-left">{{ comment.inputComment }}</p>
+                <h4 class="pull-left">{{ comment.inputComment }}</h4>
                 <span class="pull-right"> {{ comment.created }} </span>
             </div>
             <!--<button 
@@ -59,7 +61,7 @@
     <div class="pull-right">
         <div class="config">
             <a 
-                class="ui red basic button" 
+                class="ui inverted red button" 
                 (click)="onDelete()" 
                 [routerLink]="['/messages']">
                 Delete this post

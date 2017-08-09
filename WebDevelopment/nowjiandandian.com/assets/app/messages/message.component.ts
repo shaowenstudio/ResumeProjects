@@ -23,12 +23,13 @@ import { MessageService } from "./message.service";
 })
 export class MessageComponent implements OnInit{
     @Input() message: Message;
+    
     // outputContent: string = this.message.content;
 
     constructor(private messageService: MessageService) {}
 
     ngOnInit() {
-        console.log(this.message.content)
+        // console.log(this.message.content)
     }
 
     // onDelete() {

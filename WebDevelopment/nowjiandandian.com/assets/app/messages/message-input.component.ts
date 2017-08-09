@@ -17,10 +17,10 @@ export class MessageInputComponent {
         // Create
         var image = form.value.image;
         if(image == null  || image.length < 20 || image.includes('instagram') || !(image.includes("http") && image.includes("com")) ){
-            form.value.image = "http://shaowenstudio.com/images/defaultPic.png";
+            form.value.image = "https://i1.wp.com/eddieandsylviarobertson.com/wp-content/uploads/2015/09/Default-Icon-icon.png";
         }
         if(form.value.author == null){
-            form.value.author = "吃饭要吃饱，否则会做饿梦的";
+            form.value.author = "睡前要吃饱，否则会做饿梦的";
         }
         this.messageService.addMessage(new Message(
                                         form.value.content, 

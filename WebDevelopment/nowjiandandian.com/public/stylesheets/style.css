@@ -2,6 +2,7 @@ body {
   padding: 10px 50px 50px 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   font-family: Microsoft Yahei;
+  font-size: 1.5em;
 }
 
 a {
@@ -26,3 +27,8 @@ a.danger {
 input.ng-invalid.ng-touched {
   border: 1px solid red;
 }
+
+.self-content-lg {
+  font-size: 1.5em;
+}
+
